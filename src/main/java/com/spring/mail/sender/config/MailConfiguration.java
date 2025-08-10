@@ -22,12 +22,12 @@ public class MailConfiguration {
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
         mailSender.setUsername(emailUser);
-        mailSender.setPassword("<Password>");
+        mailSender.setPassword("youpassword");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
         props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.starttls", "true");
+        props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.debug", "true");
 
 
